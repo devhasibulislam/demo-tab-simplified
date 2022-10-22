@@ -109,3 +109,8 @@ button:active {
   font-weight: bolder;
 }
 /* layout 3 styles ends here  */
+
+.active {
+  background-color: red;
+  color: white;
+}
