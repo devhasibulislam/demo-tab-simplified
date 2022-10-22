@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 2vh;
+}
+
+button {
+  height: 5.5vh;
+  margin-right: 1vh;
+  width: 75px;
+  background-color: gray;
+  outline: none;
+  border: 0px;
+  border-radius: 4px;
+}
+
+button:active {
+  background-color: rgb(204, 41, 177);
+  color: white;
+}
+
+/* layout hiding  */
+.hidden {
+  display: none;
+}
+
+/* layout 1 styles starts here */
+.layout-1 {
+  display: grid;
+  grid-gap: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+.cardL1 {
+  height: 10vh;
+  background-color: rgba(221, 15, 67, 0.904);
+  border-radius: 4px;
+  color: whitesmoke;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  font-size: larger;
+  font-weight: bolder;
+}
+/* layout 1 styles ends here */
+
+/* layout 2 styles starts here */
+.layout-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 3vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+.cardL2 {
+  height: 14vh;
+  background-color: rgba(221, 15, 67, 0.904);
+  border-radius: 10px;
+  color: whitesmoke;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.cardL2:first-child {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.cardL2:nth-child(3) {
+  height: 30vh;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  justify-content: center;
+}
+.cardL2:nth-child(4),
+.cardL2:nth-child(2) {
+  height: 30vh;
+}
+.cardL2:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+/* layout 2 styles ends here */
+
+/* layout 3 styles starts here */
+.layout-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+.cardL3 {
+  height: 20vh;
+  background-color: rgba(221, 15, 67, 0.904);
+  border-radius: 10px;
+  color: whitesmoke;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  font-size: larger;
+  font-weight: bolder;
+}
+/* layout 3 styles ends here  */
