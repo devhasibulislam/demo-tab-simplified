@@ -3,6 +3,7 @@ const layout2 = document.querySelector(".layout2-boundary");
 const layout3 = document.querySelector(".layout3-boundary");
 const LayoutSwitchingButton = document.querySelectorAll(".SwitchLayout");
 for (let i = 0; i < LayoutSwitchingButton.length; i++) {
+  layout1.classList.remove("hidden");
   if (LayoutSwitchingButton[0]) {
     LayoutSwitchingButton[0].addEventListener("click", function () {
       layout1.classList.remove("hidden");
